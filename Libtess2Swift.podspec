@@ -130,6 +130,6 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "libess2-cocoapods", :git => "https://github.com/MarsDXF/libtess2-cocaopod.git"
+  spec.dependency 'libess2', '1.0.2'
   spec.swift_version = "5.1"
 end
