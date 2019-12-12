@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Libtess2Swift"
 
-  spec.homepage     = "http://EXAMPLE/Libtess2Swift"
+  spec.homepage     = "https://github.com/MarsDXF/Libtess2Swift"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -51,9 +51,8 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Vasiliy" => "Freeneos@icloud.com" }
+  spec.author             = { "Vasiliy Shaydullin" => "dxfproviewer@gmail.com" }
   # Or just: spec.author    = "Vasiliy"
-  # spec.authors            = { "Vasiliy" => "Freeneos@icloud.com" }
   # spec.social_media_url   = "https://twitter.com/Vasiliy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/Libtess2Swift.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/MarsDXF/Libtess2Swift.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,5 +131,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "libess2-cocoapods", :git => "https://github.com/MarsDXF/libtess2-cocaopod.git"
-
+  spec.swift_version = "5.1"
 end
